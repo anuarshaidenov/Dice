@@ -104,6 +104,52 @@ main {
 }
 
 /* ABSOLUTE POSITIONED ELEMENTS */
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.rules {
+  position: absolute;
+  background: #fff;
+  height: 50%;
+  width: 50%;
+  z-index: 6;
+  padding: 5rem;
+  border-radius: 9px;
+}
+
+.rules p {
+  font-size: 1.4rem;
+}
+
+.rules h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.btn--close {
+  font-size: 2rem;
+  border: none;
+  background: none;
+  padding: 0.5em;
+}
+
+.btn--close:active {
+  transform: translateY(2px);
+}
+
 .btn {
   position: absolute;
   left: 50%;
